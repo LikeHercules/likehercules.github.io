@@ -2,7 +2,7 @@
 	<nav id="top-nav" class="tui-text">
 		<div id="menu-icon-container">
   			<div id="menu-icon">
-    			///
+    			|||
   			</div>
 		</div>
 		<div id="top-nav-content" class="flex flex-end">
@@ -66,10 +66,10 @@
 				<span>..................</span>
 			</div>
 			<ul id="mobile-nav-links">
-				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/work</span></li>
-				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/team</span></li>
-				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/news</span></li>
-				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/connect</span></li>
+				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/{% if page.pageId == "work" %}<span class="selected">work</span>{% else %}<a href="{{ site.url }}/work">work</a>{% endif %}</span></li>
+				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/{% if page.pageId == "team" %}<span class="selected">team</span>{% else %}<a href="{{ site.url }}/team">team</a>{% endif %}</span></li>
+				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/{% if page.pageId == "news" %}<span class="selected">news</span>{% else %}<a href="{{ site.url }}/news">news</a>{% endif %}</span></li>
+				<li class="mobile-nav-link"><span class="mobile-nav-trail">...</span><span>/{% if page.pageId == "connect" %}<span class="selected">connect</span>{% else %}<a href="{{ site.url }}/connect">connect</a>{% endif %}</span></li>
 			</ul>  
 		</div>
 	</nav>

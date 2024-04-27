@@ -46,11 +46,12 @@ div#menu-icon-container {
 
 div#menu-icon {
 	margin: 0 0 0 auto;
-	letter-spacing: -2px;
-	font-size: 18px;
-	padding: 7px;
+	letter-spacing: -4px;
+	font-size: 19px;
 	/* border: 3.5px dotted red; */
-	font-weight: bold;
+	padding: 4px 4px 7px 7px;
+  	font-weight: bold;
+  	writing-mode: vertical-lr;
 }
 
 
@@ -119,7 +120,7 @@ div#content {
 
 @media screen and (max-width:750px) {
 	body {
-		padding: 0 50px;
+		padding: 0 30px;
 	}
 
 	#top-logo-line, #bottom-logo-line {

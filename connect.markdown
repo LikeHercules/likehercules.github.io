@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Contact
-permalink: /contact/
+layout: base
+title: Connect
+permalink: /connect/
+pageId: connect
 ---
 
 Hello there!

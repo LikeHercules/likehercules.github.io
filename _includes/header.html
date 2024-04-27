@@ -1,22 +1,59 @@
 <header>
 	<nav id="top-nav" class="tui-text">
-		<div id="site-title-container">
-			<div class="logo-line"><span>/***************</span></div>
-			<div class="logo-line"><span>* </span><span id="site-title">LikeHercules</span><span> *</span></div>
-			<div class="logo-line"><span>***************/</span></div>
+		<div id="top-nav-content" class="flex flex-end">
+			<div id="site-title-container">
+				<div id="top-logo-line" class="logo-line"><span>/***************</span></div>
+				<div id="center-logo-line" class="logo-line">
+					<span class="logo-center-slash">/</span><span>* </span>
+					{% if page.pageId == "index" %} 	
+						<span id="site-title" class="selected">LikeHercules</span>
+					{% else %}
+						<a id="site-title" href="{{ site.url }}">LikeHercules</a>
+					{% endif %}
+					<span> *</span><span class="logo-center-slash">/</span>
+				</div>
+				<div id="bottom-logo-line" class="logo-line"><span>***************/</span></div>
+			</div>
+			<div id="page-nav">
+				<div id="page-nav-links-container">
+					<ul id="page-nav-links" class="flex">
+						<li class="page-nav-link">
+							{% if page.pageId == "work" %}
+								/<span class="selected">work</span>
+							{% else %}
+								/<a href="{{ site.url }}/work">work</a>	
+							{% endif %}
+						</li>
+						<li class="page-nav-link">
+							{% if page.pageId == "team" %}
+								/<span class="selected">team</span>
+							{% else %}
+								/<a href="{{ site.url }}/team">team</a>	
+							{% endif %}
+						</li>
+						<li class="page-nav-link">
+							{% if page.pageId == "news" %}
+								/<span class="selected">news</span>
+							{% else %}
+								/<a href="{{ site.url }}/news">news</a>	
+							{% endif %}
+						</li>
+						<li class="page-nav-link">
+							{% if page.pageId == "connect" %}
+								/<span class="selected">connect</span>
+							{% else %}
+								/<a href="{{ site.url }}/connect">connect</a>	
+							{% endif %}
+						</li>
+					</ul>
+				</div>
+				<div id="nav-border">
+					<span>.</span>
+				</div>
+			</div>
 		</div>
-		<div id="page-nav">
-			<div id="page-nav-links-container">
-				<ul id="page-nav-links">
-					<li class="page-nav-link">/<a href="#">work</a></li>
-					<li class="page-nav-link">/<a href="#">team</a></li>
-					<li class="page-nav-link">/<a href="#">news</a></li>
-					<li class="page-nav-link">/<a href="3">connect</a></li>
-				</ul>
-			</div>
-			<div id="nav-border">
-				<span>.</span>
-			</div>
+		<div id="mobile-nav-border">
+			<span>.</span>
 		</div>
 	</nav>
 </header>

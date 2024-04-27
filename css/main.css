@@ -48,8 +48,8 @@ div#menu-icon {
 	margin: 0 0 0 auto;
 	letter-spacing: -2px;
 	font-size: 18px;
-	padding: 6px;
-	border: 3.5px dotted red;
+	padding: 7px;
+	/* border: 3.5px dotted red; */
 	font-weight: bold;
 }
 
@@ -140,7 +140,7 @@ div#content {
 
 	div#menu-icon:hover {
 		background-color: red;
-		color: #fcf5e3;
+		color: #fffbf3;
 		cursor: pointer;
 	}
 
@@ -157,7 +157,9 @@ div#content {
 	}
 
 	div#mobile-nav {
-	
+		position: absolute;
+		width: 100%;
+		background-color: #fffbf3;	
 	}
 
 	div#mobile-nav-left-border {
@@ -166,11 +168,16 @@ div#content {
 	}
 
 	ul#mobile-nav-links {
-		padding-top: 3px;
+		padding-top: 7px;
 	}
 
 	li.mobile-nav-link {
-		margin: 12px 0;
+		margin: 22px 0;
+		font-size: 20px
 	}
 
+	.mobile-nav-trail {
+		font-size: 16px;
+		letter-spacing: 0;
+	}
 }

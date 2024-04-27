@@ -32,9 +32,34 @@ function fillMobileNavBorder(character, charWidth)
 	}
 }
 
+function toggleMobileMenu()
+{
+	let mobileNav = $('div#mobile-nav');
+	let display =  mobileNav.css('display') === 'none' ? 'flex' : 'none';
+	mobileNav.css('display', display);
+
+	$('div#menu-icon').toggleClass('selected');
+}
+
+function watchMenuIcon()
+{
+	$('div#menu-icon').on('click', () => 
+		{
+			toggleMobileMenu();
+		});
+}
+
 function fillNavBorders(character, charWidth) {
 	fillNavBorder(character, charWidth);
 	fillMobileNavBorder(character, charWidth);
+}
+
+function mobileNavResize()
+{
+	if ($(window).width() > 750 && $('div#mobile-nav').css('display') === 'flex') 
+	{
+		toggleMobileMenu();
+	}
 }
 
 $(document).ready(() => {
@@ -42,5 +67,9 @@ $(document).ready(() => {
 	let charWidth = $('#nav-border span').width() > 0 ? $('#nav-border span').width() : $('#mobile-nav-border span').width();
 
 	fillNavBorders(c, charWidth);
-	$(window).resize(() => { fillNavBorders(c, charWidth) })
+	$(window).resize(() => { 
+		fillNavBorders(c, charWidth);
+		mobileNavResize();
+	})
+	watchMenuIcon();
 });

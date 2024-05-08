@@ -17,8 +17,13 @@ a {
 }
 
 .tui-text {
-	font-family: Menlo;
+	font-family: Menlo, "JetBrains Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	/* font-family: Menlo; */
 	letter-spacing: 1px;
+	line-height: 1.2;
 }
 
 header {

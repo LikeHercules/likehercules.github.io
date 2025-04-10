@@ -3,4 +3,4 @@ layout: base
 pageId: index
 ---
 
-LikeHercules is an experimental software studio in Chicago.
+LikeHercules is an experimental software studio in the Pacific Northwest.

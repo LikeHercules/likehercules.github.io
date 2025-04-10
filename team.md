@@ -4,23 +4,13 @@ pageId: team
 ---
 
 ## Eric Margules
-### Designer/Programmer
-Eric Margules has two cats. He likes running and stuff. 
-
-
+["programming", "design", "business"]
 
 ## Syema Ailia
-### Designer/Artist
-Syema Ailia is fabulously creative. She likes traveling.
-
-
+["design", "business", "marketing"]
 
 ## Ibi
-### Mentor
-Ibi spends his time deep in thought. But his contributions are invaluable.
-
-
+["sleeping", "eating"]
 
 ## Kaju
-### Tester
-Kaju is furry and sleepy.
+["purring", "stretching"]

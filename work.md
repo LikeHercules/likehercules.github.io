@@ -5,10 +5,8 @@ pageId: work
 
 ## TPK
 ### Puzzle/Strategy Game
-A puzzle game combining the strategy of chess with the imagination of TTRPGs. 
+A daily puzzle game where chess tactics collide with the adventure of tabletop RPGs.
 
-
-
-## Magic Circle
-### Town Simulator/Adventure game
-Explore the secrets of the Magic Circle in this isometric adventure game.
+## Pilgrim
+### Puzzle/Strategy Game
+A daily dungeon crawler where every step weaves a story of survival and discovery.
